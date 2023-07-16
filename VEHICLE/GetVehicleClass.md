@@ -1,6 +1,7 @@
 ---
 ns: VEHICLE
 ---
+
 ## GET_VEHICLE_CLASS
 
 ```c
@@ -18,7 +19,7 @@ Vehicle Classes:
 4: Muscle  
 5: Sports Classics  
 6: Sports  
-7: Super  
+7: Super
 8: Motorcycles  
 9: Off-road  
 10: Industrial  
@@ -34,6 +35,7 @@ Vehicle Classes:
 20: Commercial  
 21: Trains  
 22: Open Wheel
+23: Electric
 char buffer[128];  
 std::sprintf(buffer, "VEH_CLASS_%i", VEHICLE::GET_VEHICLE_CLASS(vehicle));  
 char* className = UI::_GET_LABEL_TEXT(buffer);  
